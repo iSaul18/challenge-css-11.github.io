@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+/* font-family: 'Outfit', sans-serif; (300-400-600) */
+
+/* GENERAL */
+:root {
+    --Cyan: hsl(178, 100%, 50%);
+    --blue0: hsl(215, 51%, 70%);
+    --blue1: hsl(217, 54%, 11%);
+    --blue2: hsl(216, 50%, 16%);
+    --blue3: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+}
+
+/* CUERPO */
+.container-main {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--blue1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-card {
+    width: 35rem;
+    height: 60rem;
+    background-color: var(--blue2);
+    padding: 2.5rem;
+    border-radius: 1.58rem;
+}
+
+.card__picture {
+    height: 30rem;
+    width: 30rem;
+}
+
+.card__img {
+    border-radius: 1rem;
+    width: 100%;
+}
+
+.card__h1 {
+    color: var(--White);
+    margin-top: 2rem;
+    font-size: 2.3rem;
+    font-weight: 500;
+}
+
+.card__p {
+    color: var(--blue0);
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 2.8rem;
+    margin-bottom: 1rem;
+}
+
+
+/* CONTAINER-PICTURES */
+.container-pictures {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__picture-eth,
+.card__picture-clock { 
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.card__img-eth { /* eth */
+    width: 1.1rem;
+    height: 1.8rem;
+}
+.card__p-eth {
+    color: var(--Cyan);
+    font-size: 1.5rem;
+}
+
+.card__img-clock { /*clock*/
+    width: 1.8rem;
+    height: 1.8rem;
+}
+
+.card__p-clock {
+    color: var(--blue0);
+    font-size: 1.5rem;
+}
+
+/* FOOTER */
+.container-footer {
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    border-top: 1px solid var(--blue3);
+}
+
+.footer__img {
+    width: 4rem;
+    height: 4rem;
+    border: 1px solid #fff;
+    border-radius: 30px;
+}
+
+.footer__p {
+    color: var(--blue0);
+    font-size: 1.5rem;
+}
+
+.footer__span {
+    color: var(--White);
+}
+
+/* MOVIL */
+@media (max-width:420px) {
+    html {
+        font-size: 48%;
+    }
+}
